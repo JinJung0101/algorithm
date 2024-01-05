@@ -19,3 +19,4 @@ nums = re.findall('\d+', text)
 print(nums)
 # 리스트 컴프리헨션을 사용하여 숫자들을 int로 변환하고 합합니다.
 print(sum(int(num) for num in nums))
+
