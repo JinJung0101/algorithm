@@ -1,5 +1,5 @@
 import sys
-# list를 사용하는 예시, 시간 복잡도 O(n)
+#list를 사용하는 예시, 시간 복잡도 O(n)
 # strings = list(map(str, sys.stdin.readline().strip()))
 # num = int(sys.stdin.readline())
 # cursur = len(strings)
