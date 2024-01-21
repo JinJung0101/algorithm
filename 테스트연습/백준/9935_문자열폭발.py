@@ -11,4 +11,5 @@ for i in range(len(right_strings)):
             
     else:
         left_strings.append(right_strings.popleft())
+// 답변 추가
 
