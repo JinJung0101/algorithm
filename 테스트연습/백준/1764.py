@@ -16,3 +16,4 @@ for _ in range(m):
 print(ans)
 b.sort()
 for i in b:
+    print(i)
