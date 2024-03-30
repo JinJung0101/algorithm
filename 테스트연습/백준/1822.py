@@ -1,6 +1,10 @@
-import sys
+na, nb = map(int, input().split())
+a = set([*map(int, input().split())])
+b = set([*map(int, input().split())])
 
-A = set(sys.stdin.readline().split())
-B = set(sys.stdin.readline().split())
-
-print(A - B)
+c = a - b
+print(len(c))
+c = list(c)
+c.sort()
+for i in c:
+    print(i, end=' ')
