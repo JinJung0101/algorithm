@@ -34,5 +34,8 @@ def create_maze(commands):
         print(''.join(row))
 
 
-commands = "FLFLFRF"
+# 예제 입력 받기
+N = int(input())
+commands = input().strip()
+
 create_maze(commands)
