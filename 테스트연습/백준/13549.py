@@ -25,4 +25,5 @@ def bfs(n, k):
     return visited[k]
 
 n, k = map(int, input().split())
+
 print(bfs(n, k))
