@@ -26,3 +26,35 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+# 다른 풀이  ---------------------------------------
+
+import sys
+input = sys.stdin.read
+
+def classify_triangle(sides):
+    a, b, c = sorted(sides)
+    if a + b <= c:
+        return "Invalid"
+    if a == c:
+        return "Equilateral"
+    elif a == b or b == c:
+        return "Isosceles"
+    else:
+        return "Scalene"
+
+def process_input(data):
+    lines = data.strip().split('\n')
+    triangles = (map(int, line.split()) for line in lines)
+    return [classify_triangle(triangle) for triangle in triangles if not all(x == 0 for x in triangle)]
+
+def main():
+    data = input()
+    results = process_input(data)
+    for result in results:
+        print(result)
+
+if __name__ == "__main__":
+    main()
