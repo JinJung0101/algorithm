@@ -13,3 +13,20 @@ def find_layer(n):
 
 n = int(input())
 print(find_layer(n))
+
+
+# 수학적 풀이
+
+def find_layer_math(n):
+    if n == 1:
+        return 1  # 첫 번째 방은 중앙에 있으므로 1층
+    layer = 0
+    count = 1  # 시작점
+    while True:
+        count += 6 * layer  # 각 레이어마다 6개씩 증가
+        layer += 1
+        if count >= n:
+            return layer
+
+n = int(input())
+print(find_layer_math(n))
